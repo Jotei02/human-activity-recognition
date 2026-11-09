@@ -41,10 +41,10 @@ PY=".venv/bin/python"
 run() { echo; echo "+ $*"; if [ "$DRY" = 0 ]; then "$@"; fi; }
 step() { echo; echo "=================== $* ==================="; }
 
-# step "1/7  virtualenv + dependencies"
-# run python3 -m venv .venv
-# run $PY -m pip install -q --upgrade pip
-# run $PY -m pip install -r requirements.txt
+step "1/7  virtualenv + dependencies"
+run python3 -m venv .venv
+run $PY -m pip install -q --upgrade pip
+run $PY -m pip install -r requirements.txt
 
 step "2/7  pin scikit-learn for the Docker image"
 if [ "$DRY" = 0 ]; then
