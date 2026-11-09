@@ -1,0 +1,18 @@
+# Training / evaluation / benchmarking
+numpy
+scikit-learn==1.8.0
+joblib
+torch
+xgboost
+onnx
+onnxruntime
+onnxmltools
+matplotlib
+seaborn
+
+# Serving + load test
+fastapi
+uvicorn[standard]
+pydantic
+aiohttp
+requests

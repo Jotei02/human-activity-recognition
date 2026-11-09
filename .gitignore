@@ -1,0 +1,29 @@
+# Data (UCI HAR is public: document how to download it, don't commit it)
+data/
+*.npy
+*.npz
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Model artifacts: keep the small deployable ones (needed by the Docker image),
+# ignore intermediates
+model/*.pth
+model/*_prep.onnx
+model/*.data
+
+# Generated outputs (regenerate with the scripts; README embeds the key numbers)
+load_test_results.json
+evaluation_results.json
+benchmark_results.json
+benchmark_results.txt
+confusion_*.txt
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

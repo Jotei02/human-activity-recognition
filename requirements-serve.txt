@@ -1,0 +1,10 @@
+# Minimal runtime dependencies for the inference service (used by the Dockerfile).
+# scikit-learn is needed only to unpickle model/scaler.pkl. Pin it to the version
+# you trained with (`pip show scikit-learn`), otherwise unpickling can warn or fail.
+numpy
+scikit-learn==1.8.0
+joblib
+onnxruntime
+fastapi
+uvicorn[standard]
+pydantic

@@ -1,0 +1,13 @@
+data/
+docs/
+.git/
+.venv/
+__pycache__/
+*.pyc
+*.npy
+model/*.pth
+model/*_prep.onnx
+model/xgb_model.*
+benchmark_results.*
+evaluation_results.json
+load_test_results.json
